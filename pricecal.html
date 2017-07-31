@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pricing Calculator</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<style type="text/css">
+		.outer {
+			border-radius: 5px;
+			padding: 50px;
+			margin-top: 5%;
+			margin-right: 20%;
+			margin-left: 5%;
+			width: 40%;
+			border-style: groove;
+			border-width: thin;
+		}
+		input{
+			margin-bottom: 10px;
+		}
+		p{
+			float: right;
+		}
+		input[type =range] {
+			padding: 0px;
+		}
+	</style>
+</head>
+<body>
+	<div class="outer">
+		<form>
+			<label>Price:</label>
+			<input type="text" name="price-input" value="30" class="form-control">
+			<label>Quentity: </label>
+			<span class="quentity"></span>
+			<input type="range" name="quentity-input" value="1" class="form-control">
+		</form>
+		<p>Total: <span class="totalprice">0</span></p>
+	</div>
+	<script type="text/javascript" src="pc.js"></script>
+</body>
+</html>
